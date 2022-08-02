@@ -1,0 +1,24 @@
+# Ignore everythingruns
+#*
+
+# But not these files...
+!.gitignore
+!.gitattributes
+.gitignore.bak
+
+!build.bat
+!build.tcl
+*.log
+*.jou
+*.str
+*.analytics
+
+
+/XILINX_BASYS_3/*
+/.Xil/*
+/NA/*
+
+/Vitis/.metadata/
+/Vitis/RemoteSystemsTempFiles/
+/Vitis/CPU1_platform/*
+!/Vitis/CPU1_platform/platform.tcl
