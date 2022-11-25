@@ -55,12 +55,10 @@ module main(
 	wire 			   clk_10MHz;	
 	wire               clk_10Hz;
 	wire               clk_1Hz;
-
 	
 	// Buttons
 	wire 				rst;
 	wire 				n_rst;
-
 
     // CPU
     wire        IIC0_scl_i;
@@ -96,7 +94,6 @@ module main(
 			   defparam 	clk_div_0.div_by	= 100_000_000;
  
 
-
 //===================================================================                       
 //                       Processor CPU1
 //===================================================================
@@ -110,7 +107,7 @@ module main(
         .IIC0_sda_t(IIC0_sda_t),
         
         //GPIO
-        .IO_in0_tri_i   ({28'd0, btnU, btnL, btnR, btnD}),
+        .IO_in0_tri_i   ({20'd0, psm, btnU, btnL, btnR, btnD}),
         .IO_out0_tri_o  ({31'd0, LED[2]}),
 
         //SPI
@@ -176,6 +173,54 @@ assign LED[0]   = clk_1Hz;
 assign LED[1]   = clk_10Hz;
 assign LED[15]  = btnC;
 assign JA[2]    = UART_TX;
+
+
+
+	reg 			cnt_sign1 = 0;
+	reg 			cnt_sign2 = 0;
+	reg	[16-1:0]	cnt_value1 = 0;
+	reg	[16-1:0]	cnt_value2 = 0;
+	reg	[16-1:0]	SPS_value = 0;
+	wire	[7:0]	psm;
+	
+/*
+PSM_controller1 PSM_controller_0(
+    .CLK            (CLK_100MHz),
+    .RST            (0),
+    .iSPS_value     ({1'b0, SPS_value[14:0]}),
+    .iSPS_sign      (SPS_value[15]),
+    .iDPS_value     (0),
+    .iDPS_sign      (0),
+    .iFREQUENCY     (400),
+    .iDEADTIME      (2),
+    .iN             (0),
+    .iSych1         (cnt_sign1),
+    .iSych2         (cnt_sign2),
+    .oPSM           (psm)
+    ); 
+*/
+    // Main counter
+	always @(posedge CLK_100MHz)
+	begin
+	
+		if (rst) 						cnt_sign1 = 1'b0;
+		else if (cnt_value1 == 4000)	cnt_sign1 = 1'b1;
+		else  							cnt_sign1 = 1'b0;
+	
+		if (rst) 						cnt_value1 <= 0;
+		else if (cnt_sign1 == 1'b1)		cnt_value1 <= 0;
+		else  							cnt_value1 <= cnt_value1 + 1;
+	
+
+		if (rst) 						cnt_sign2 = 1'b0;
+		else if (cnt_value2 ==  4000)	cnt_sign2 = 1'b1;
+		else  							cnt_sign2 = 1'b0;
+		
+		if (rst) 						cnt_value2 <= 2000;
+		else if (cnt_sign2 == 1'b1)		cnt_value2 <= 0;
+		else  							cnt_value2 <= cnt_value2 + 1;
+		
+	end	
 
 
 endmodule
