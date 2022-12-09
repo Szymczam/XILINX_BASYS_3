@@ -89,8 +89,8 @@ module PSM_controller1 (
 	reg 	N = 0;
 
 
-	always @(posedge CLK)
-	begin
+	
+	initial begin
 		if ((cnt_value1 >= upper-1) || RST)	
 		begin
 			if (iSPS_value > upper) 	SPS_value 	<= upper;

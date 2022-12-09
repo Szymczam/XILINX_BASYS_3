@@ -52,13 +52,13 @@ module main(
 );
 
 	//	Clocks
-	wire 			   clk_10MHz;	
-	wire               clk_10Hz;
-	wire               clk_1Hz;
+	wire 	    clk_10MHz;	
+	wire        clk_10Hz;
+	wire        clk_1Hz;
 	
 	// Buttons
-	wire 				rst;
-	wire 				n_rst;
+	wire 		rst;
+	wire 		n_rst;
 
     // CPU
     wire        IIC0_scl_i;
