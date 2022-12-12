@@ -8,6 +8,12 @@ set_property PACKAGE_PIN W5 [get_ports CLK_100MHz]
 set_property IOSTANDARD LVCMOS33 [get_ports CLK_100MHz]
 create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports CLK_100MHz]
 
+#timing
+create_generated_clock -name clk_200 -source [get_ports CLK_100MHz] -multiply_by 2 [get_pins clock_manager_inst/clk_wiz_0_inst/clk_out_200MHz]
+create_generated_clock -name clk_10 -source [get_ports CLK_100MHz] -divide_by  10 [get_pins clock_manager_inst/clk_wiz_0_inst/clk_out_10MHz]
+
+
+
 ## Switches
 set_property PACKAGE_PIN V17 [get_ports {SW[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {SW[0]}]
@@ -214,31 +220,31 @@ set_property IOSTANDARD LVCMOS33 [get_ports {JB[7]}]
 
 
 
-#Pmod Header JXADC
-#Sch name = XA1_P
-set_property PACKAGE_PIN J3 [get_ports {vauxp6}]
-set_property IOSTANDARD LVCMOS33 [get_ports {vauxp6}]
-#Sch name = XA2_P
-set_property PACKAGE_PIN L3 [get_ports {vauxp14}]
-set_property IOSTANDARD LVCMOS33 [get_ports {vauxp14}]
-#Sch name = XA3_P
-set_property PACKAGE_PIN M2 [get_ports {vauxp7}]
-set_property IOSTANDARD LVCMOS33 [get_ports {vauxp7}]
-#Sch name = XA4_P
-set_property PACKAGE_PIN N2 [get_ports {vauxp15}]
-set_property IOSTANDARD LVCMOS33 [get_ports {vauxp15}]
-#Sch name = XA1_N
-set_property PACKAGE_PIN K3 [get_ports {vauxn6}]
-set_property IOSTANDARD LVCMOS33 [get_ports {vauxn6}]
-#Sch name = XA2_N
-set_property PACKAGE_PIN M3 [get_ports {vauxn14}]
-set_property IOSTANDARD LVCMOS33 [get_ports {vauxn14}]
-#Sch name = XA3_N
-set_property PACKAGE_PIN M1 [get_ports {vauxn7}]
-set_property IOSTANDARD LVCMOS33 [get_ports {vauxn7}]
-#Sch name = XA4_N
-set_property PACKAGE_PIN N1 [get_ports {vauxn15}]
-set_property IOSTANDARD LVCMOS33 [get_ports {vauxn15}]
+##Pmod Header JXADC
+##Sch name = XA1_P
+#set_property PACKAGE_PIN J3 [get_ports {vauxp6}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {vauxp6}]
+##Sch name = XA2_P
+#set_property PACKAGE_PIN L3 [get_ports {vauxp14}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {vauxp14}]
+##Sch name = XA3_P
+#set_property PACKAGE_PIN M2 [get_ports {vauxp7}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {vauxp7}]
+##Sch name = XA4_P
+#set_property PACKAGE_PIN N2 [get_ports {vauxp15}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {vauxp15}]
+##Sch name = XA1_N
+#set_property PACKAGE_PIN K3 [get_ports {vauxn6}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {vauxn6}]
+##Sch name = XA2_N
+#set_property PACKAGE_PIN M3 [get_ports {vauxn14}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {vauxn14}]
+##Sch name = XA3_N
+#set_property PACKAGE_PIN M1 [get_ports {vauxn7}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {vauxn7}]
+##Sch name = XA4_N
+#set_property PACKAGE_PIN N1 [get_ports {vauxn15}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {vauxn15}]
 
 ##Pmod Header JXADC
 ##Sch name = XA1_P
@@ -333,4 +339,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports UART_TX]
 ## Configuration options, can be used for all designs
 set_property CONFIG_VOLTAGE 3.3 [current_design]
 set_property CFGBVS VCCO [current_design]
+
+
+
 

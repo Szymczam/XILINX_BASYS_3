@@ -51,14 +51,6 @@ module main(
     inout   [7:0]   JB
 );
 
-	//	Clocks
-	wire 	    clk_10MHz;	
-	wire        clk_10Hz;
-	wire        clk_1Hz;
-	
-	// Buttons
-	wire 		rst;
-	wire 		n_rst;
 
     // CPU
     wire        IIC0_scl_i;
@@ -90,98 +82,151 @@ module main(
 //===================================================================                       
 //                         Clocks
 //===================================================================
-	clk_div    clk_div_0	(CLK_100MHz, 0, clk_1Hz);
-			   defparam 	clk_div_0.div_by	= 100_000_000;
+    wire clk_10MHz, clk_200MHz;
  
-
+    clock_manager clock_manager_inst(
+        .iclk_100MHz     (CLK_100MHz),
+        .irst            (0),
+        .oclk_locked_o   (),
+        .oclk_200MHz     (clk_200MHz),
+        .oclk_10MHz      (clk_10MHz)
+    ); 
+ 
 //===================================================================                       
-//                       Processor CPU1
+//                         GPIO & Reset 
 //===================================================================
- CPU1 CPU1_1
-       (//IIC
-        .IIC0_scl_i(IIC0_scl_i),
-        .IIC0_scl_o(IIC0_scl_o),
-        .IIC0_scl_t(IIC0_scl_t),
-        .IIC0_sda_i(IIC0_sda_i),
-        .IIC0_sda_o(IIC0_sda_o),
-        .IIC0_sda_t(IIC0_sda_t),
-        
-        //GPIO
-        .IO_in0_tri_i   ({20'd0, psm, btnU, btnL, btnR, btnD}),
-        .IO_out0_tri_o  ({31'd0, LED[2]}),
+	// Buttons
+	wire 		rst;
+	wire 		n_rst;
+	
+    assign rst      = btnC;
+    assign n_rst    = !rst;
+    
+    assign LED[0]   = 0;
+    assign LED[1]   = 0;
+    assign LED[15]  = btnC;
 
-        //SPI
-        .SPI0_io0_i(SPI0_io0_i),
-        .SPI0_io0_o(SPI0_io0_o),
-        .SPI0_io0_t(SPI0_io0_t),
-        .SPI0_io1_i(SPI0_io1_i),
-        .SPI0_io1_o(SPI0_io1_o),
-        .SPI0_io1_t(SPI0_io1_t),
-        .SPI0_sck_i(SPI0_sck_i),
-        .SPI0_sck_o(SPI0_sck_o),
-        .SPI0_sck_t(SPI0_sck_t),
-        .SPI0_ss_i(SPI0_ss_i_0),
-        .SPI0_ss_o(SPI0_ss_o_0),
-        .SPI0_ss_t(SPI0_ss_t),
-               
-        //UART
-        .UART0_rxd(UART_RX),
-        .UART0_txd(UART_TX),
-        //CLK
-        .clk_in1(CLK_100MHz),
-        //RESET
-        .reset(rst)
-  );
-  
-  //I2C
-  IOBUF IIC0_scl_iobuf
-       (.I(IIC0_scl_o),
-        .IO(JA[0]),
-        .O(IIC0_scl_i),
-        .T(IIC0_scl_t));
-  IOBUF IIC0_sda_iobuf
-       (.I(IIC0_sda_o),
-        .IO(JA[1]),
-        .O(IIC0_sda_i),
-        .T(IIC0_sda_t));
-  //SPI      
-  IOBUF SPI0_io0_iobuf
-       (.I(SPI0_io0_o),
-        .IO(JB[0]),
-        .O(SPI0_io0_i),
-        .T(SPI0_io0_t));
-  IOBUF SPI0_io1_iobuf
-       (.I(SPI0_io1_o),
-        .IO(JB[1]),
-        .O(SPI0_io1_i),
-        .T(SPI0_io1_t));
-  IOBUF SPI0_sck_iobuf
-       (.I(SPI0_sck_o),
-        .IO(JB[2]),
-        .O(SPI0_sck_i),
-        .T(SPI0_sck_t));
-  IOBUF SPI0_ss_iobuf_0
-       (.I(SPI0_ss_o_0),
-        .IO(JB[3]),
-        .O(SPI0_ss_i_0),
-        .T(SPI0_ss_t));
-
-assign rst      = btnC;
-assign n_rst    = !rst;
-
-assign LED[0]   = clk_1Hz;
-assign LED[1]   = clk_10Hz;
-assign LED[15]  = btnC;
-assign JA[2]    = UART_TX;
-
-
-
+     
+//===================================================================                       
+//                         PSM
+//===================================================================
 	reg 			cnt_sign1 = 0;
 	reg 			cnt_sign2 = 0;
 	reg	[16-1:0]	cnt_value1 = 0;
 	reg	[16-1:0]	cnt_value2 = 0;
 	reg	[16-1:0]	SPS_value = 0;
-	wire	[7:0]	psm;
+	wire	[7:0]	psm_8b;
+
+
+    PSM_controller1 PSM_controller_0(
+        .CLK            (clk_200MHz),
+        .RST            (rst),
+        .iSPS_value     ({1'b0, SPS_value[14:0]}),
+        .iSPS_sign      (SPS_value[15]),
+        .iDPS_value     (0),
+        .iDPS_sign      (0),
+        .iFREQUENCY     (4000),
+        .iDEADTIME      (20),
+        .iN             (0),
+        .iSych1         (cnt_sign1),
+        .iSych2         (cnt_sign2),
+        .oPSM           (psm_8b)
+    );
+    
+    assign JA = psm_8b;
+    
+    
+    ila_0 ila_0_inst(
+        .clk        (clk_200MHz),
+        
+        .probe0     ({8'd0, psm_8b}),//16bit
+        .probe1     (0),//16bit
+        .probe2     (0),//16bit
+        .probe3     ({16'd0})//16bit
+        ); 
+
+//===================================================================                       
+//                       Processor CPU1
+//===================================================================
+// CPU1 CPU1_1
+//       (//IIC
+//        .IIC0_scl_i(IIC0_scl_i),
+//        .IIC0_scl_o(IIC0_scl_o),
+//        .IIC0_scl_t(IIC0_scl_t),
+//        .IIC0_sda_i(IIC0_sda_i),
+//        .IIC0_sda_o(IIC0_sda_o),
+//        .IIC0_sda_t(IIC0_sda_t),
+        
+//        //GPIO
+//        .IO_in0_tri_i   ({20'd0, psm, btnU, btnL, btnR, btnD}),
+//        .IO_out0_tri_o  ({31'd0, LED[2]}),
+
+//        //SPI
+//        .SPI0_io0_i(SPI0_io0_i),
+//        .SPI0_io0_o(SPI0_io0_o),
+//        .SPI0_io0_t(SPI0_io0_t),
+//        .SPI0_io1_i(SPI0_io1_i),
+//        .SPI0_io1_o(SPI0_io1_o),
+//        .SPI0_io1_t(SPI0_io1_t),
+//        .SPI0_sck_i(SPI0_sck_i),
+//        .SPI0_sck_o(SPI0_sck_o),
+//        .SPI0_sck_t(SPI0_sck_t),
+//        .SPI0_ss_i(SPI0_ss_i_0),
+//        .SPI0_ss_o(SPI0_ss_o_0),
+//        .SPI0_ss_t(SPI0_ss_t),
+               
+//        //UART
+//        .UART0_rxd(UART_RX),
+//        .UART0_txd(UART_TX),
+//        //CLK
+//        .clk_in1(CLK_100MHz),
+//        //RESET
+//        .reset(rst)
+//  );
+  
+//  //I2C
+//  IOBUF IIC0_scl_iobuf
+//       (.I(IIC0_scl_o),
+//        .IO(JA[0]),
+//        .O(IIC0_scl_i),
+//        .T(IIC0_scl_t));
+//  IOBUF IIC0_sda_iobuf
+//       (.I(IIC0_sda_o),
+//        .IO(JA[1]),
+//        .O(IIC0_sda_i),
+//        .T(IIC0_sda_t));
+//  //SPI      
+//  IOBUF SPI0_io0_iobuf
+//       (.I(SPI0_io0_o),
+//        .IO(JB[0]),
+//        .O(SPI0_io0_i),
+//        .T(SPI0_io0_t));
+//  IOBUF SPI0_io1_iobuf
+//       (.I(SPI0_io1_o),
+//        .IO(JB[1]),
+//        .O(SPI0_io1_i),
+//        .T(SPI0_io1_t));
+//  IOBUF SPI0_sck_iobuf
+//       (.I(SPI0_sck_o),
+//        .IO(JB[2]),
+//        .O(SPI0_sck_i),
+//        .T(SPI0_sck_t));
+//  IOBUF SPI0_ss_iobuf_0
+//       (.I(SPI0_ss_o_0),
+//        .IO(JB[3]),
+//        .O(SPI0_ss_i_0),
+//        .T(SPI0_ss_t));
+
+
+
+
+
+//	reg 			cnt_sign1 = 0;
+//	reg 			cnt_sign2 = 0;
+//	reg	[16-1:0]	cnt_value1 = 0;
+//	reg	[16-1:0]	cnt_value2 = 0;
+//	reg	[16-1:0]	SPS_value = 0;
+//	wire	[7:0]	psm;
 	
 /*
 PSM_controller1 PSM_controller_0(
@@ -200,27 +245,26 @@ PSM_controller1 PSM_controller_0(
     ); 
 */
     // Main counter
-	always @(posedge CLK_100MHz)
-	begin
+//	always @(posedge CLK_100MHz)
+//	begin
 	
-		if (rst) 						cnt_sign1 = 1'b0;
-		else if (cnt_value1 == 4000)	cnt_sign1 = 1'b1;
-		else  							cnt_sign1 = 1'b0;
+//		if (rst) 						cnt_sign1 = 1'b0;
+//		else if (cnt_value1 == 4000)	cnt_sign1 = 1'b1;
+//		else  							cnt_sign1 = 1'b0;
 	
-		if (rst) 						cnt_value1 <= 0;
-		else if (cnt_sign1 == 1'b1)		cnt_value1 <= 0;
-		else  							cnt_value1 <= cnt_value1 + 1;
+//		if (rst) 						cnt_value1 <= 0;
+//		else if (cnt_sign1 == 1'b1)		cnt_value1 <= 0;
+//		else  							cnt_value1 <= cnt_value1 + 1;
 	
 
-		if (rst) 						cnt_sign2 = 1'b0;
-		else if (cnt_value2 ==  4000)	cnt_sign2 = 1'b1;
-		else  							cnt_sign2 = 1'b0;
+//		if (rst) 						cnt_sign2 = 1'b0;
+//		else if (cnt_value2 ==  4000)	cnt_sign2 = 1'b1;
+//		else  							cnt_sign2 = 1'b0;
 		
-		if (rst) 						cnt_value2 <= 2000;
-		else if (cnt_sign2 == 1'b1)		cnt_value2 <= 0;
-		else  							cnt_value2 <= cnt_value2 + 1;
-		
-	end	
+//		if (rst) 						cnt_value2 <= 2000;
+//		else if (cnt_sign2 == 1'b1)		cnt_value2 <= 0;
+//		else  							cnt_value2 <= cnt_value2 + 1;
+//	end	
 
 
 endmodule
