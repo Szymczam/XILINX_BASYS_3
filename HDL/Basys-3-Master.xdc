@@ -4,13 +4,13 @@
 ## - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
 
 ## Clock signal
-set_property PACKAGE_PIN W5 [get_ports CLK_100MHz]
-set_property IOSTANDARD LVCMOS33 [get_ports CLK_100MHz]
-create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports CLK_100MHz]
+set_property PACKAGE_PIN W5 [get_ports CLK_IN_100MHz]
+set_property IOSTANDARD LVCMOS33 [get_ports CLK_IN_100MHz]
+create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports CLK_IN_100MHz]
 
 #timing
-create_generated_clock -name clk_200 -source [get_ports CLK_100MHz] -multiply_by 2 [get_pins clock_manager_inst/clk_wiz_0_inst/clk_out_200MHz]
-create_generated_clock -name clk_10 -source [get_ports CLK_100MHz] -divide_by  10 [get_pins clock_manager_inst/clk_wiz_0_inst/clk_out_10MHz]
+create_generated_clock -name clk_200 -source [get_ports CLK_IN_100MHz] -multiply_by 2 [get_pins clock_manager_inst/clk_wiz_0_inst/clk_out_200MHz]
+create_generated_clock -name clk_100 -source [get_ports CLK_IN_100MHz] -multiply_by 1 [get_pins clock_manager_inst/clk_wiz_0_inst/clk_out_100MHz]
 
 
 

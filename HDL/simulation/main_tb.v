@@ -37,30 +37,36 @@ module main_tb(
     reg 	iN = 0;
     reg 	[BITS_DATA-1:0]	iDPS_value = 0;
     reg 	[BITS_DATA-1:0]	iSPS_value = 0;
-    reg 	[BITS_DATA-1:0]	iFREQUENCY = 40;
-    reg 	[15:0]	iDEADTIME = 4;
+    reg 	[BITS_DATA-1:0]	iFREQUENCY = 4000;
+    reg 	[15:0]	iDEADTIME = 25;
     
     always #1   CLK = ~CLK;
     always #1   clk_cnt = clk_cnt + 1;
 
+
+
+    wire [4:0]	btn;
+    debounce #(.WIDTH(5), .TIMEOUT(1000), .TIMEOUT_WIDTH(16)) debounce_inst(
+        .clk        (CLK),
+        .data_in    ({0}),
+        .data_out   (btn)
+    );
    
     initial begin
-        
     
         iSPS_value  = 0;
         iSPS_sign   = 0;
-        iDPS_value  = iFREQUENCY/4;
-        iDPS_sign   = 1;
+     //   iDPS_value  = iFREQUENCY/4;
+     //   iDPS_sign   = 1;
         
         #1000   RST = 0;
-        
-        
+
         //SPS = 90, DPS = 0
     //    #(PERIOD-20) RST = 1; 
         iSPS_value  = 0;
         iSPS_sign   = 0;
-        iDPS_value  = iFREQUENCY/4;
-        iDPS_sign   = 1;
+     //   iDPS_value  = iFREQUENCY/4;
+     //   iDPS_sign   = 1;
       //  #1100 RST = 0;
         
 //        //SPS = 90, DPS = 0

@@ -4,7 +4,7 @@ module clock_manager(
 	input          irst,
     output         oclk_locked_o,
     output         oclk_200MHz,
- 	output         oclk_10MHz
+ 	output         oclk_100MHz
 );
 
 //===================================================================                       
@@ -28,9 +28,9 @@ module clock_manager(
     clk_wiz_0 clk_wiz_0_inst(
       // Clock out ports  
       .clk_out_200MHz(oclk_200MHz),
-      .clk_out_10MHz(oclk_10MHz),
+      .clk_out_100MHz(oclk_100MHz),
       // Status and control signals               
-      .locked(clk_locked),
+      .locked(oclk_locked_o),
      // Clock in ports
       .clk_in1(iclk_100MHz)
     );

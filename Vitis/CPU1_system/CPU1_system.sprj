@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="ASCII"?>
-<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="CPU1_system" platform="F:/GitKraken/XILINX_BASYS_3/Vitis/CPU1_platform/export/CPU1_platform/CPU1_platform.xpfm" platformUID="xilinx:basys3::0.0(custom)" sysConfig="CPU1_platform" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
-  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.145195994">
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="CPU1_system" platform="F:/GitKraken/XILINX_BASYS_3/Vitis/main/export/main/main.xpfm" platformUID="xilinx:basys3::0.0(custom)" sysConfig="main" runtime="cpp" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.192344522">
     <configBuildOptions xsi:type="systemproject:SystemOptions">
-      <applications name="CPU1" domainName="standalone_domain" domainPrettyName="standalone_domain" appBuildConfig="Debug"/>
-      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+      <applications name="CPU1" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
     </configBuildOptions>
   </configuration>
-  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.475444026">
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.78735334">
     <configBuildOptions xsi:type="systemproject:SystemOptions">
-      <applications name="CPU1" domainName="standalone_domain" domainPrettyName="standalone_domain" appBuildConfig="Release"/>
-      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+      <applications name="CPU1" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Release"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
     </configBuildOptions>
   </configuration>
 </systemproject:SystemProject>

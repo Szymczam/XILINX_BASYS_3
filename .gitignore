@@ -20,5 +20,5 @@
 
 /Vitis/.metadata/
 /Vitis/RemoteSystemsTempFiles/
-/Vitis/CPU1_platform/*
-!/Vitis/CPU1_platform/platform.tcl
+/Vitis/main/*
+!/Vitis/main/platform.tcl
