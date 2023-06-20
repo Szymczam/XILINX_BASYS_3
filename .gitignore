@@ -12,13 +12,28 @@
 *.jou
 *.str
 *.analytics
+*.Xil
 
-
+# Vivado Project
 /XILINX_BASYS_3/*
-/.Xil/*
-/NA/*
+/XILINX_BASYS_3/XILINX_BASYS_3.ip_user_files
+!/XILINX_BASYS_3/XILINX_BASYS_3.sim
+!/XILINX_BASYS_3/XILINX_BASYS_3.srcs
+!*xpr
 
+
+# Vitis Project
 /Vitis/.metadata/
 /Vitis/RemoteSystemsTempFiles/
-/Vitis/main/*
-!/Vitis/main/platform.tcl
+/Vitis/CPU1_platform/*
+!/Vitis/CPU1_platform/platform.tcl
+
+
+
+
+
+
+
+
+
+

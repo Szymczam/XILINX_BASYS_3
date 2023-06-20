@@ -1,5 +1,5 @@
-
-#include <stdio.h>
+/*
+//#include <stdio.h>
 
 #include "xil_printf.h"
 #include "sleep.h"	//delay
@@ -42,3 +42,4 @@ int main(){
     }
 
 }
+*/

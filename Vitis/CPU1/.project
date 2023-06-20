@@ -3,7 +3,7 @@
 	<name>CPU1</name>
 	<comment>Created by Vitis v2022.1</comment>
 	<projects>
-		<project>main</project>
+		<project>CPU1_platform</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

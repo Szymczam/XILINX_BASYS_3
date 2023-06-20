@@ -1,0 +1,18 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_microblaze_0_0/sim/CPU1_microblaze_0_0.vhd" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_microblaze_0_axi_intc_0/sim/CPU1_microblaze_0_axi_intc_0.vhd" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_axi_gpio_0_0/sim/CPU1_axi_gpio_0_0.vhd" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_axi_quad_spi_0_0/sim/CPU1_axi_quad_spi_0_0.vhd" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_axi_uartlite_0_0/sim/CPU1_axi_uartlite_0_0.vhd" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_mdm_1_0/sim/CPU1_mdm_1_0.vhd" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_axi_iic_0_0/sim/CPU1_axi_iic_0_0.vhd" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_ilmb_v10_0/sim/CPU1_ilmb_v10_0.vhd" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_dlmb_bram_if_cntlr_0/sim/CPU1_dlmb_bram_if_cntlr_0.vhd" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_dlmb_v10_0/sim/CPU1_dlmb_v10_0.vhd" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_ilmb_bram_if_cntlr_0/sim/CPU1_ilmb_bram_if_cntlr_0.vhd" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_rst_clk_wiz_1_100M_0/sim/CPU1_rst_clk_wiz_1_100M_0.vhd" \
+"../../../../../HDL/clk_div.vhd" \
+
+# Do not sort compile order
+nosort

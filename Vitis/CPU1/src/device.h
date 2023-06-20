@@ -5,7 +5,7 @@
  *      Author: marek
  */
 
-#ifndef SRC_DEVICE_H_
+
 #define SRC_DEVICE_H_
 
 #include "xparameters.h"
@@ -95,27 +95,3 @@ int Init_GPIO();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif /* SRC_DEVICE_H_ */

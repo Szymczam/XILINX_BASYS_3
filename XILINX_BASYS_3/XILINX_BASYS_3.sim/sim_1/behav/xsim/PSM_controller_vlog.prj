@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../XILINX_BASYS_3.gen/sources_1/bd/CPU1/ipshared/4e49" --include "../../../../XILINX_BASYS_3.gen/sources_1/bd/CPU1/ipshared/ec67/hdl" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_xbar_0/sim/CPU1_xbar_0.v" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_clk_wiz_1_0/CPU1_clk_wiz_1_0_clk_wiz.v" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_clk_wiz_1_0/CPU1_clk_wiz_1_0.v" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_lmb_bram_0/sim/CPU1_lmb_bram_0.v" \
+"../../../../../HDL/segClkDevider.v" \
+"../../../../../HDL/bin2dec.v" \
+"../../../../../HDL/counter3bit.v" \
+"../../../../../HDL/mux4_4bus.v" \
+"../../../../../HDL/main.v" \
+"../../../../../HDL/decoder3_8.v" \
+"../../../../../HDL/sevensegdecoder.v" \
+"../../../../../HDL/DigitToSeg.v" \
+"../../../../../HDL/ADC.v" \
+"../../../../../HDL/mIOBUF.v" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/ip/CPU1_microblaze_0_xlconcat_0/sim/CPU1_microblaze_0_xlconcat_0.v" \
+"../../../../XILINX_BASYS_3.ip_user_files/bd/CPU1/sim/CPU1.v" \
+"../../../../../HDL/PSM_controller.v" \
+"../../../../../HDL/PSM_deadtime.v" \
+"../../../../../HDL/Gray_Code.v" \
+"../../../../../HDL/Gray_code_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
