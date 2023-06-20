@@ -188,4 +188,26 @@ module main(
 
 
 
+//Seven Segment Display Signal
+reg [15:0] seg7_16b = 15;//input to seg7 to define segment pattern
+wire[19:0] seg7_bcdout_20b;// bcdout is sent to Scroll_Display Module
+
+bin_to_decimal u1 (
+    .B(seg7_16b), 
+    .bcdout(seg7_bcdout_20b)
+);
+
+// 7segment display module
+    seg7decimal u7 (
+        .x(seg7_bcdout_20b[15:0]),
+        .clk(CLK_IN_100MHz),
+        .clr(btnC),
+        .a_to_g(SEG),
+        .an(AN),
+        .dp(DP)
+    );
+    
+
+
+
 endmodule

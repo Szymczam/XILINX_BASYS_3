@@ -102,6 +102,54 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_axi_uartlite_0_0/CPU1_axi_uartlite_0_0.xci">
+          <Proxy FileSetName="CPU1_axi_uartlite_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_clk_wiz_1_0/CPU1_clk_wiz_1_0.xci">
+          <Proxy FileSetName="CPU1_clk_wiz_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_axi_gpio_0_0/CPU1_axi_gpio_0_0.xci">
+          <Proxy FileSetName="CPU1_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_axi_quad_spi_0_0/CPU1_axi_quad_spi_0_0.xci">
+          <Proxy FileSetName="CPU1_axi_quad_spi_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_mdm_1_0/CPU1_mdm_1_0.xci">
+          <Proxy FileSetName="CPU1_mdm_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_axi_iic_0_0/CPU1_axi_iic_0_0.xci">
+          <Proxy FileSetName="CPU1_axi_iic_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_PmodSD_0_0/CPU1_PmodSD_0_0.xci">
+          <Proxy FileSetName="CPU1_PmodSD_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_xbar_0/CPU1_xbar_0.xci">
+          <Proxy FileSetName="CPU1_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_lmb_bram_0/CPU1_lmb_bram_0.xci">
+          <Proxy FileSetName="CPU1_lmb_bram_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_dlmb_bram_if_cntlr_0/CPU1_dlmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="CPU1_dlmb_bram_if_cntlr_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_ilmb_bram_if_cntlr_0/CPU1_ilmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="CPU1_ilmb_bram_if_cntlr_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_dlmb_v10_0/CPU1_dlmb_v10_0.xci">
+          <Proxy FileSetName="CPU1_dlmb_v10_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_microblaze_0_axi_intc_0/CPU1_microblaze_0_axi_intc_0.xci">
+          <Proxy FileSetName="CPU1_microblaze_0_axi_intc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_ilmb_v10_0/CPU1_ilmb_v10_0.xci">
+          <Proxy FileSetName="CPU1_ilmb_v10_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_rst_clk_wiz_1_100M_0/CPU1_rst_clk_wiz_1_100M_0.xci">
+          <Proxy FileSetName="CPU1_rst_clk_wiz_1_100M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CPU1.bd" FileRelPathName="ip/CPU1_microblaze_0_0/CPU1_microblaze_0_0.xci">
+          <Proxy FileSetName="CPU1_microblaze_0_0"/>
+        </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/CPU1_wrapper.v">
         <FileInfo>
@@ -109,14 +157,6 @@
           <Attr Name="ImportTime" Val="1679864810"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/clk_div.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/sources_1/imports/clk_div.vhd"/>
-          <Attr Name="ImportTime" Val="1659464659"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -138,15 +178,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/mIOBUF.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/sources_1/imports/mIOBUF.v"/>
-          <Attr Name="ImportTime" Val="1659464659"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/counter3bit.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/sources_1/imports/counter3bit.v"/>
@@ -160,15 +191,6 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/sources_1/imports/main.v"/>
           <Attr Name="ImportTime" Val="1680644614"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/ADC.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/sources_1/imports/ADC.v"/>
-          <Attr Name="ImportTime" Val="1659464659"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -205,6 +227,20 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/sources_1/imports/decoder3_8.v"/>
           <Attr Name="ImportTime" Val="1659464659"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/bin_to_decimal.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Seg_7_Display.v">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -377,160 +413,177 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="19">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/main.dcp" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/synth_1">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/main.dcp" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_microblaze_0_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_microblaze_0_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_microblaze_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_microblaze_0_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_microblaze_0_0_synth_1">
+    <Run Id="CPU1_microblaze_0_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_microblaze_0_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_microblaze_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_microblaze_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_microblaze_0_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_microblaze_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_microblaze_0_axi_intc_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_microblaze_0_axi_intc_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_microblaze_0_axi_intc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_microblaze_0_axi_intc_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_microblaze_0_axi_intc_0_synth_1">
+    <Run Id="CPU1_microblaze_0_axi_intc_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_microblaze_0_axi_intc_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_microblaze_0_axi_intc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_microblaze_0_axi_intc_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_microblaze_0_axi_intc_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_microblaze_0_axi_intc_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_xbar_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_xbar_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_xbar_0_synth_1">
+    <Run Id="CPU1_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_xbar_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_xbar_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_xbar_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_xbar_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_axi_gpio_0_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_axi_gpio_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_gpio_0_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_gpio_0_0_synth_1">
+    <Run Id="CPU1_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_axi_gpio_0_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_axi_gpio_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_axi_gpio_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_gpio_0_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_gpio_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_axi_quad_spi_0_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_axi_quad_spi_0_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_axi_quad_spi_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_quad_spi_0_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_quad_spi_0_0_synth_1">
+    <Run Id="CPU1_axi_quad_spi_0_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_axi_quad_spi_0_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_axi_quad_spi_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_axi_quad_spi_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_quad_spi_0_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_quad_spi_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_axi_uartlite_0_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_axi_uartlite_0_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_axi_uartlite_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_uartlite_0_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_uartlite_0_0_synth_1">
+    <Run Id="CPU1_axi_uartlite_0_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_axi_uartlite_0_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_axi_uartlite_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_axi_uartlite_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_uartlite_0_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_uartlite_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_clk_wiz_1_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_clk_wiz_1_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_clk_wiz_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_clk_wiz_1_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_clk_wiz_1_0_synth_1">
+    <Run Id="CPU1_clk_wiz_1_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_clk_wiz_1_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_clk_wiz_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_clk_wiz_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_clk_wiz_1_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_clk_wiz_1_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_mdm_1_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_mdm_1_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_mdm_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_mdm_1_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_mdm_1_0_synth_1">
+    <Run Id="CPU1_mdm_1_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_mdm_1_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_mdm_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_mdm_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_mdm_1_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_mdm_1_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_axi_iic_0_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_axi_iic_0_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_axi_iic_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_iic_0_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_iic_0_0_synth_1">
+    <Run Id="CPU1_axi_iic_0_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_axi_iic_0_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_axi_iic_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_axi_iic_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_iic_0_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_axi_iic_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_ilmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_ilmb_v10_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_ilmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_ilmb_v10_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_ilmb_v10_0_synth_1">
+    <Run Id="CPU1_ilmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_ilmb_v10_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_ilmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_ilmb_v10_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_ilmb_v10_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_ilmb_v10_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_dlmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_dlmb_bram_if_cntlr_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_dlmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_dlmb_bram_if_cntlr_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_dlmb_bram_if_cntlr_0_synth_1">
+    <Run Id="CPU1_dlmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_dlmb_bram_if_cntlr_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_dlmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_dlmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_dlmb_bram_if_cntlr_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_dlmb_bram_if_cntlr_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_dlmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_dlmb_v10_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_dlmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_dlmb_v10_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_dlmb_v10_0_synth_1">
+    <Run Id="CPU1_dlmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_dlmb_v10_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_dlmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_dlmb_v10_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_dlmb_v10_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_dlmb_v10_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_ilmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_ilmb_bram_if_cntlr_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_ilmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_ilmb_bram_if_cntlr_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_ilmb_bram_if_cntlr_0_synth_1">
+    <Run Id="CPU1_ilmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_ilmb_bram_if_cntlr_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_ilmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_ilmb_bram_if_cntlr_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_ilmb_bram_if_cntlr_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_lmb_bram_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_lmb_bram_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_lmb_bram_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_lmb_bram_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_lmb_bram_0_synth_1">
+    <Run Id="CPU1_lmb_bram_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_lmb_bram_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_lmb_bram_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_lmb_bram_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_lmb_bram_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_lmb_bram_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_rst_clk_wiz_1_100M_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_rst_clk_wiz_1_100M_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_rst_clk_wiz_1_100M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_rst_clk_wiz_1_100M_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_rst_clk_wiz_1_100M_0_synth_1">
+    <Run Id="CPU1_rst_clk_wiz_1_100M_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_rst_clk_wiz_1_100M_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_rst_clk_wiz_1_100M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_rst_clk_wiz_1_100M_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_rst_clk_wiz_1_100M_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_rst_clk_wiz_1_100M_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="CPU1_PmodSD_0_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_PmodSD_0_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_PmodSD_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_PmodSD_0_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_PmodSD_0_0_synth_1">
+    <Run Id="CPU1_PmodSD_0_0_synth_1" Type="Ft3:Synth" SrcSet="CPU1_PmodSD_0_0" Part="xc7a35tcpg236-1" ConstrsSet="CPU1_PmodSD_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CPU1_PmodSD_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_PmodSD_0_0_synth_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/XILINX_BASYS_3.srcs/utils_1/imports/CPU1_PmodSD_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/srcs/utils_1/imports/impl_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/srcs/utils_1/imports/impl_1">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../XILINX_BASYS_3/srcs/utils_1/imports/impl_1" AutoRQSDir="$PPRDIR/../XILINX_BASYS_3/srcs/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
@@ -545,6 +598,7 @@
           <Option Id="BinFile">1</Option>
         </Step>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
