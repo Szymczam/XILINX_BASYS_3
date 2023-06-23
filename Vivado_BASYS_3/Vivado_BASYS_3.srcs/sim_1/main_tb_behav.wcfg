@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="main_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="iic_pkg" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="lmb_bram_if_funcs" />
+            <top_module name="main_tb" />
+            <top_module name="mdm_funcs" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="147.38568000 us"></ZoomStartTime>
+      <ZoomEndTime time="306.72775652 us"></ZoomEndTime>
+      <Cursor1Time time="294.53710000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="207"></NameColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/main_tb/CLK_IN_100MHz" type="logic">
+      <obj_property name="ElementShortName">CLK_IN_100MHz</obj_property>
+      <obj_property name="ObjectShortName">CLK_IN_100MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/main_inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/main_inst/psm1/oPSM" type="array">
+      <obj_property name="ElementShortName">oPSM[7:0]</obj_property>
+      <obj_property name="ObjectShortName">oPSM[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/main_inst/btn1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/main_inst/CPU_PSM_SPS_14b" type="array">
+      <obj_property name="ElementShortName">CPU_PSM_SPS_14b[13:0]</obj_property>
+      <obj_property name="ObjectShortName">CPU_PSM_SPS_14b[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/main_inst/CPU_PSM_DPS_14b" type="array">
+      <obj_property name="ElementShortName">CPU_PSM_DPS_14b[13:0]</obj_property>
+      <obj_property name="ObjectShortName">CPU_PSM_DPS_14b[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main_tb/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="group391" type="group">
+      <obj_property name="label">PSM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/main_tb/main_inst/psm1/CLK" type="logic">
+         <obj_property name="ElementShortName">CLK</obj_property>
+         <obj_property name="ObjectShortName">CLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/RST" type="logic">
+         <obj_property name="ElementShortName">RST</obj_property>
+         <obj_property name="ObjectShortName">RST</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/SPS_value_i" type="array">
+         <obj_property name="ElementShortName">SPS_value_i[13:0]</obj_property>
+         <obj_property name="ObjectShortName">SPS_value_i[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/DPS_value_i" type="array">
+         <obj_property name="ElementShortName">DPS_value_i[13:0]</obj_property>
+         <obj_property name="ObjectShortName">DPS_value_i[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/CPU_PSM_soft_i" type="logic">
+         <obj_property name="ElementShortName">CPU_PSM_soft_i</obj_property>
+         <obj_property name="ObjectShortName">CPU_PSM_soft_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/local_counter_i" type="array">
+         <obj_property name="ElementShortName">local_counter_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">local_counter_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/oPSM" type="array">
+         <obj_property name="ElementShortName">oPSM[7:0]</obj_property>
+         <obj_property name="ObjectShortName">oPSM[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/cnt_value1" type="array">
+         <obj_property name="ElementShortName">cnt_value1[13:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_value1[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/cnt_value2" type="array">
+         <obj_property name="ElementShortName">cnt_value2[13:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_value2[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/SPS_value" type="array">
+         <obj_property name="ElementShortName">SPS_value[13:0]</obj_property>
+         <obj_property name="ObjectShortName">SPS_value[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/DPS_value" type="array">
+         <obj_property name="ElementShortName">DPS_value[13:0]</obj_property>
+         <obj_property name="ObjectShortName">DPS_value[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/update1" type="logic">
+         <obj_property name="ElementShortName">update1</obj_property>
+         <obj_property name="ObjectShortName">update1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/SPS_value0" type="array">
+         <obj_property name="ElementShortName">SPS_value0[13:0]</obj_property>
+         <obj_property name="ObjectShortName">SPS_value0[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/SPS_value1" type="array">
+         <obj_property name="ElementShortName">SPS_value1[13:0]</obj_property>
+         <obj_property name="ObjectShortName">SPS_value1[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/SPS_value_p" type="array">
+         <obj_property name="ElementShortName">SPS_value_p[13:0]</obj_property>
+         <obj_property name="ObjectShortName">SPS_value_p[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/SPS_value_n" type="array">
+         <obj_property name="ElementShortName">SPS_value_n[13:0]</obj_property>
+         <obj_property name="ObjectShortName">SPS_value_n[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/SPS_sign" type="logic">
+         <obj_property name="ElementShortName">SPS_sign</obj_property>
+         <obj_property name="ObjectShortName">SPS_sign</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/DPS_value0" type="array">
+         <obj_property name="ElementShortName">DPS_value0[13:0]</obj_property>
+         <obj_property name="ObjectShortName">DPS_value0[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/DPS_value1" type="array">
+         <obj_property name="ElementShortName">DPS_value1[13:0]</obj_property>
+         <obj_property name="ObjectShortName">DPS_value1[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/DPS_value_p" type="array">
+         <obj_property name="ElementShortName">DPS_value_p[13:0]</obj_property>
+         <obj_property name="ObjectShortName">DPS_value_p[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/DPS_value_n" type="array">
+         <obj_property name="ElementShortName">DPS_value_n[13:0]</obj_property>
+         <obj_property name="ObjectShortName">DPS_value_n[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/DPS_sign" type="logic">
+         <obj_property name="ElementShortName">DPS_sign</obj_property>
+         <obj_property name="ObjectShortName">DPS_sign</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_value1" type="array">
+         <obj_property name="ElementShortName">PSM_value1[13:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_value1[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_value2" type="array">
+         <obj_property name="ElementShortName">PSM_value2[13:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_value2[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_value3" type="array">
+         <obj_property name="ElementShortName">PSM_value3[13:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_value3[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_value4" type="array">
+         <obj_property name="ElementShortName">PSM_value4[13:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_value4[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSMa" type="array">
+         <obj_property name="ElementShortName">PSMa[3:0]</obj_property>
+         <obj_property name="ObjectShortName">PSMa[3:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSMb" type="array">
+         <obj_property name="ElementShortName">PSMb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">PSMb[3:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSMa_r" type="array">
+         <obj_property name="ElementShortName">PSMa_r[3:0]</obj_property>
+         <obj_property name="ObjectShortName">PSMa_r[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/deadtime_rst" type="logic">
+         <obj_property name="ElementShortName">deadtime_rst</obj_property>
+         <obj_property name="ObjectShortName">deadtime_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/shift" type="array">
+         <obj_property name="ElementShortName">shift[13:0]</obj_property>
+         <obj_property name="ObjectShortName">shift[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/psm_a" type="array">
+         <obj_property name="ElementShortName">psm_a[7:0]</obj_property>
+         <obj_property name="ObjectShortName">psm_a[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/psm_b" type="array">
+         <obj_property name="ElementShortName">psm_b[7:0]</obj_property>
+         <obj_property name="ObjectShortName">psm_b[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_ap1" type="array">
+         <obj_property name="ElementShortName">PSM_ap1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_ap1[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_ap2" type="array">
+         <obj_property name="ElementShortName">PSM_ap2[1:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_ap2[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_as1" type="array">
+         <obj_property name="ElementShortName">PSM_as1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_as1[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_as2" type="array">
+         <obj_property name="ElementShortName">PSM_as2[1:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_as2[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_bp1" type="array">
+         <obj_property name="ElementShortName">PSM_bp1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_bp1[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_bp2" type="array">
+         <obj_property name="ElementShortName">PSM_bp2[1:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_bp2[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_bs1" type="array">
+         <obj_property name="ElementShortName">PSM_bs1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_bs1[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_bs2" type="array">
+         <obj_property name="ElementShortName">PSM_bs2[1:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_bs2[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_8a" type="array">
+         <obj_property name="ElementShortName">PSM_8a[7:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_8a[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/PSM_8b" type="array">
+         <obj_property name="ElementShortName">PSM_8b[7:0]</obj_property>
+         <obj_property name="ObjectShortName">PSM_8b[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/N" type="array">
+         <obj_property name="ElementShortName">N[31:0]</obj_property>
+         <obj_property name="ObjectShortName">N[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/upper" type="array">
+         <obj_property name="ElementShortName">upper[13:0]</obj_property>
+         <obj_property name="ObjectShortName">upper[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/upper2" type="array">
+         <obj_property name="ElementShortName">upper2[13:0]</obj_property>
+         <obj_property name="ObjectShortName">upper2[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/upper23" type="array">
+         <obj_property name="ElementShortName">upper23[13:0]</obj_property>
+         <obj_property name="ObjectShortName">upper23[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main_tb/main_inst/psm1/minus_one" type="array">
+         <obj_property name="ElementShortName">minus_one[13:0]</obj_property>
+         <obj_property name="ObjectShortName">minus_one[13:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

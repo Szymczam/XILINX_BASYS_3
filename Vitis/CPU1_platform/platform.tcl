@@ -9,22 +9,13 @@
 # -out option specifies the output directory of the platform project.
 
 platform create -name {CPU1_platform}\
--hw {F:\GitKraken\XILINX_BASYS_3\HDL\main.xsa}\
+-hw {F:\GitKraken\XILINX_BASYS_3\Vivado_BASYS_3\main.xsa}\
 -proc {microblaze_0} -os {standalone} -out {F:/GitKraken/XILINX_BASYS_3/Vitis}
 
 platform write
 platform generate -domains 
 platform active {CPU1_platform}
 platform generate
-bsp reload
-bsp reload
-domain config -runtime {cpp}
-platform write
-platform generate -domains 
-bsp reload
-platform config -updatehw {F:/GitKraken/XILINX_BASYS_3/HDL/main.xsa}
-platform generate -domains 
 platform active {CPU1_platform}
-bsp reload
-bsp reload
-platform generate
+platform config -updatehw {F:/GitKraken/XILINX_BASYS_3/Vivado_BASYS_3/main.xsa}
+platform generate -domains 

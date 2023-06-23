@@ -8,6 +8,10 @@ set_property PACKAGE_PIN W5 [get_ports CLK_IN_100MHz]
 set_property IOSTANDARD LVCMOS33 [get_ports CLK_IN_100MHz]
 create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports CLK_IN_100MHz]
 
+create_generated_clock -name clk_out_100MHz     -source [get_ports CLK_IN_100MHz]                   -multiply_by 1     [get_pins clk_wiz_0_inst/clk_out_100MHz]
+create_generated_clock -name clk_out_125MHz     -source [get_ports CLK_IN_100MHz] -divide_by 4      -multiply_by 5     [get_pins clk_wiz_0_inst/clk_out_125MHz]
+create_generated_clock -name clk_out_250MHz     -source [get_ports CLK_IN_100MHz] -divide_by 4      -multiply_by 10    [get_pins clk_wiz_0_inst/clk_out_250MHz]
+
 
 ## Switches
 set_property PACKAGE_PIN V17 [get_ports {SW[0]}]

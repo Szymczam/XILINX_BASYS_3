@@ -25,16 +25,18 @@ extern XGpio 		Gpio0_out0;
 union CPU_GPIO0_IN {
 	u32 all;
 	struct{
-		u32 btn : 5;
-		u32 rsvd : 27;
+		u32 btn : 4;
+		u32 rsvd : 28;
 	}bit;
 };
 
 union CPU_GPIO0_OUT {
 	u32 all;
 	struct{
-		u32 LED2 : 1;
-		u32 rsvd : 31;
+		u32 CPU_PSM_SPS_14b : 14;
+		u32 CPU_PSM_DPS_14b : 14;
+		u32 CPU_Led 		: 1;
+		u32 rsvd 			: 3;
 	}bit;
 };
 

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x39A6F5BB09814F4D",
+      "boundary_crc": "0x6258B4A38C8BCCD3",
       "device": "xc7a35tcpg236-1",
       "gen_directory": "../../../../Vivado_BASYS_3.gen/sources_1/bd/CPU1",
       "name": "CPU1",
@@ -11,11 +11,6 @@
       "validated": "true"
     },
     "design_tree": {
-      "axi_gpio_0": "",
-      "axi_iic_0": "",
-      "axi_quad_spi_0": "",
-      "axi_uartlite_0": "",
-      "clk_wiz_1": "",
       "mdm_1": "",
       "microblaze_0": "",
       "microblaze_0_axi_intc": "",
@@ -38,8 +33,12 @@
         "lmb_bram": ""
       },
       "microblaze_0_xlconcat": "",
-      "rst_clk_wiz_1_100M": "",
-      "PmodSD_0": ""
+      "axi_gpio_0": "",
+      "axi_iic_0": "",
+      "axi_quad_spi_0": "",
+      "axi_uartlite_0": "",
+      "clk_wiz_1": "",
+      "rst_clk_wiz_1_100M": ""
     },
     "interface_ports": {
       "IIC0": {
@@ -61,11 +60,6 @@
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
         "vlnv": "xilinx.com:interface:spi_rtl:1.0"
-      },
-      "Pmod_SD": {
-        "mode": "Master",
-        "vlnv_bus_definition": "digilentinc.com:interface:pmod:1.0",
-        "vlnv": "digilentinc.com:interface:pmod_rtl:1.0"
       },
       "UART0": {
         "mode": "Master",
@@ -114,119 +108,6 @@
       }
     },
     "components": {
-      "axi_gpio_0": {
-        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "xci_name": "CPU1_axi_gpio_0_0",
-        "xci_path": "ip\\CPU1_axi_gpio_0_0\\CPU1_axi_gpio_0_0.xci",
-        "inst_hier_path": "axi_gpio_0",
-        "parameters": {
-          "C_ALL_INPUTS": {
-            "value": "1"
-          },
-          "C_ALL_OUTPUTS_2": {
-            "value": "1"
-          },
-          "C_GPIO_WIDTH": {
-            "value": "32"
-          },
-          "C_INTERRUPT_PRESENT": {
-            "value": "1"
-          },
-          "C_IS_DUAL": {
-            "value": "1"
-          },
-          "GPIO2_BOARD_INTERFACE": {
-            "value": "Custom"
-          },
-          "GPIO_BOARD_INTERFACE": {
-            "value": "Custom"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
-      },
-      "axi_iic_0": {
-        "vlnv": "xilinx.com:ip:axi_iic:2.1",
-        "xci_name": "CPU1_axi_iic_0_0",
-        "xci_path": "ip\\CPU1_axi_iic_0_0\\CPU1_axi_iic_0_0.xci",
-        "inst_hier_path": "axi_iic_0"
-      },
-      "axi_quad_spi_0": {
-        "vlnv": "xilinx.com:ip:axi_quad_spi:3.2",
-        "xci_name": "CPU1_axi_quad_spi_0_0",
-        "xci_path": "ip\\CPU1_axi_quad_spi_0_0\\CPU1_axi_quad_spi_0_0.xci",
-        "inst_hier_path": "axi_quad_spi_0",
-        "parameters": {
-          "C_SCK_RATIO": {
-            "value": "16"
-          },
-          "C_SPI_MEMORY": {
-            "value": "1"
-          },
-          "C_SPI_MODE": {
-            "value": "0"
-          },
-          "C_TYPE_OF_AXI4_INTERFACE": {
-            "value": "0"
-          },
-          "C_USE_STARTUP": {
-            "value": "0"
-          },
-          "C_XIP_MODE": {
-            "value": "0"
-          },
-          "C_XIP_PERF_MODE": {
-            "value": "0"
-          },
-          "Master_mode": {
-            "value": "1"
-          },
-          "QSPI_BOARD_INTERFACE": {
-            "value": "Custom"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
-      },
-      "axi_uartlite_0": {
-        "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
-        "xci_name": "CPU1_axi_uartlite_0_0",
-        "xci_path": "ip\\CPU1_axi_uartlite_0_0\\CPU1_axi_uartlite_0_0.xci",
-        "inst_hier_path": "axi_uartlite_0",
-        "parameters": {
-          "C_BAUDRATE": {
-            "value": "115200"
-          },
-          "UARTLITE_BOARD_INTERFACE": {
-            "value": "usb_uart"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
-      },
-      "clk_wiz_1": {
-        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
-        "xci_name": "CPU1_clk_wiz_1_0",
-        "xci_path": "ip\\CPU1_clk_wiz_1_0\\CPU1_clk_wiz_1_0.xci",
-        "inst_hier_path": "clk_wiz_1",
-        "parameters": {
-          "CLK_OUT1_PORT": {
-            "value": "clk_100MHz"
-          },
-          "PRIM_SOURCE": {
-            "value": "Single_ended_clock_capable_pin"
-          },
-          "RESET_BOARD_INTERFACE": {
-            "value": "Custom"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
-      },
       "mdm_1": {
         "vlnv": "xilinx.com:ip:mdm:3.2",
         "xci_name": "CPU1_mdm_1_0",
@@ -1314,39 +1195,130 @@
           }
         }
       },
-      "rst_clk_wiz_1_100M": {
-        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "xci_name": "CPU1_rst_clk_wiz_1_100M_0",
-        "xci_path": "ip\\CPU1_rst_clk_wiz_1_100M_0\\CPU1_rst_clk_wiz_1_100M_0.xci",
-        "inst_hier_path": "rst_clk_wiz_1_100M",
+      "axi_gpio_0": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "CPU1_axi_gpio_0_0",
+        "xci_path": "ip\\CPU1_axi_gpio_0_0\\CPU1_axi_gpio_0_0.xci",
+        "inst_hier_path": "axi_gpio_0",
         "parameters": {
-          "RESET_BOARD_INTERFACE": {
-            "value": "reset"
+          "C_ALL_INPUTS": {
+            "value": "1"
+          },
+          "C_ALL_OUTPUTS_2": {
+            "value": "1"
+          },
+          "C_GPIO_WIDTH": {
+            "value": "32"
+          },
+          "C_INTERRUPT_PRESENT": {
+            "value": "1"
+          },
+          "C_IS_DUAL": {
+            "value": "1"
+          },
+          "GPIO2_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "GPIO_BOARD_INTERFACE": {
+            "value": "Custom"
           },
           "USE_BOARD_FLOW": {
             "value": "true"
           }
         }
       },
-      "PmodSD_0": {
-        "vlnv": "digilentinc.com:IP:PmodSD:1.0",
-        "xci_name": "CPU1_PmodSD_0_0",
-        "xci_path": "ip\\CPU1_PmodSD_0_0\\CPU1_PmodSD_0_0.xci",
-        "inst_hier_path": "PmodSD_0",
+      "axi_iic_0": {
+        "vlnv": "xilinx.com:ip:axi_iic:2.1",
+        "xci_name": "CPU1_axi_iic_0_0",
+        "xci_path": "ip\\CPU1_axi_iic_0_0\\CPU1_axi_iic_0_0.xci",
+        "inst_hier_path": "axi_iic_0"
+      },
+      "axi_quad_spi_0": {
+        "vlnv": "xilinx.com:ip:axi_quad_spi:3.2",
+        "xci_name": "CPU1_axi_quad_spi_0_0",
+        "xci_path": "ip\\CPU1_axi_quad_spi_0_0\\CPU1_axi_quad_spi_0_0.xci",
+        "inst_hier_path": "axi_quad_spi_0",
         "parameters": {
-          "PMOD": {
-            "value": "ja"
+          "C_SCK_RATIO": {
+            "value": "16"
+          },
+          "C_SPI_MEMORY": {
+            "value": "1"
+          },
+          "C_SPI_MODE": {
+            "value": "0"
+          },
+          "C_S_AXI4_ID_WIDTH": {
+            "value": "0"
+          },
+          "C_TYPE_OF_AXI4_INTERFACE": {
+            "value": "0"
+          },
+          "C_USE_STARTUP": {
+            "value": "0"
+          },
+          "C_XIP_MODE": {
+            "value": "0"
+          },
+          "C_XIP_PERF_MODE": {
+            "value": "0"
+          },
+          "Master_mode": {
+            "value": "1"
+          },
+          "QSPI_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
           }
         }
+      },
+      "axi_uartlite_0": {
+        "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
+        "xci_name": "CPU1_axi_uartlite_0_0",
+        "xci_path": "ip\\CPU1_axi_uartlite_0_0\\CPU1_axi_uartlite_0_0.xci",
+        "inst_hier_path": "axi_uartlite_0",
+        "parameters": {
+          "C_BAUDRATE": {
+            "value": "115200"
+          },
+          "UARTLITE_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "clk_wiz_1": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "CPU1_clk_wiz_1_0",
+        "xci_path": "ip\\CPU1_clk_wiz_1_0\\CPU1_clk_wiz_1_0.xci",
+        "inst_hier_path": "clk_wiz_1",
+        "parameters": {
+          "CLK_OUT1_PORT": {
+            "value": "clk_100MHz"
+          },
+          "PRIM_SOURCE": {
+            "value": "Single_ended_clock_capable_pin"
+          },
+          "RESET_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "rst_clk_wiz_1_100M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "CPU1_rst_clk_wiz_1_100M_0",
+        "xci_path": "ip\\CPU1_rst_clk_wiz_1_100M_0\\CPU1_rst_clk_wiz_1_100M_0.xci",
+        "inst_hier_path": "rst_clk_wiz_1_100M"
       }
     },
     "interface_nets": {
-      "PmodSD_0_Pmod_out": {
-        "interface_ports": [
-          "Pmod_SD",
-          "PmodSD_0/Pmod_out"
-        ]
-      },
       "axi_gpio_0_GPIO": {
         "interface_ports": [
           "IO_in0",
@@ -1405,18 +1377,6 @@
         "interface_ports": [
           "axi_gpio_0/S_AXI",
           "microblaze_0_axi_periph/M04_AXI"
-        ]
-      },
-      "microblaze_0_axi_periph_M05_AXI": {
-        "interface_ports": [
-          "microblaze_0_axi_periph/M05_AXI",
-          "PmodSD_0/AXI_LITE_SDCS"
-        ]
-      },
-      "microblaze_0_axi_periph_M06_AXI": {
-        "interface_ports": [
-          "microblaze_0_axi_periph/M06_AXI",
-          "PmodSD_0/AXI_LITE_SPI"
         ]
       },
       "microblaze_0_debug": {
@@ -1496,11 +1456,6 @@
       "microblaze_0_Clk": {
         "ports": [
           "clk_wiz_1/clk_100MHz",
-          "axi_gpio_0/s_axi_aclk",
-          "axi_iic_0/s_axi_aclk",
-          "axi_quad_spi_0/ext_spi_clk",
-          "axi_quad_spi_0/s_axi_aclk",
-          "axi_uartlite_0/s_axi_aclk",
           "microblaze_0/Clk",
           "microblaze_0_axi_intc/processor_clk",
           "microblaze_0_axi_intc/s_axi_aclk",
@@ -1513,9 +1468,13 @@
           "microblaze_0_axi_periph/M05_ACLK",
           "microblaze_0_axi_periph/S00_ACLK",
           "microblaze_0_local_memory/LMB_Clk",
-          "rst_clk_wiz_1_100M/slowest_sync_clk",
           "microblaze_0_axi_periph/M06_ACLK",
-          "PmodSD_0/s_axi_aclk"
+          "axi_gpio_0/s_axi_aclk",
+          "axi_iic_0/s_axi_aclk",
+          "axi_quad_spi_0/ext_spi_clk",
+          "axi_quad_spi_0/s_axi_aclk",
+          "axi_uartlite_0/s_axi_aclk",
+          "rst_clk_wiz_1_100M/slowest_sync_clk"
         ]
       },
       "microblaze_0_intr": {
@@ -1547,10 +1506,6 @@
       "rst_clk_wiz_1_100M_peripheral_aresetn": {
         "ports": [
           "rst_clk_wiz_1_100M/peripheral_aresetn",
-          "axi_gpio_0/s_axi_aresetn",
-          "axi_iic_0/s_axi_aresetn",
-          "axi_quad_spi_0/s_axi_aresetn",
-          "axi_uartlite_0/s_axi_aresetn",
           "microblaze_0_axi_intc/s_axi_aresetn",
           "microblaze_0_axi_periph/ARESETN",
           "microblaze_0_axi_periph/M00_ARESETN",
@@ -1561,7 +1516,10 @@
           "microblaze_0_axi_periph/M05_ARESETN",
           "microblaze_0_axi_periph/S00_ARESETN",
           "microblaze_0_axi_periph/M06_ARESETN",
-          "PmodSD_0/s_axi_aresetn"
+          "axi_gpio_0/s_axi_aresetn",
+          "axi_iic_0/s_axi_aresetn",
+          "axi_quad_spi_0/s_axi_aresetn",
+          "axi_uartlite_0/s_axi_aresetn"
         ]
       }
     },
@@ -1570,20 +1528,6 @@
         "address_spaces": {
           "Data": {
             "segments": {
-              "SEG_PmodSD_0_Reg0": {
-                "address_block": "/PmodSD_0/AXI_LITE_SDCS/Reg0",
-                "offset": "0x44A10000",
-                "range": "64K",
-                "offset_base_param": "AXI_LITE_SDCS_BASEADDR",
-                "offset_high_param": "AXI_LITE_SDCS_HIGHADDR"
-              },
-              "SEG_PmodSD_0_Reg0_1": {
-                "address_block": "/PmodSD_0/AXI_LITE_SPI/Reg0",
-                "offset": "0x44A20000",
-                "range": "64K",
-                "offset_base_param": "AXI_LITE_SPI_BASEADDR",
-                "offset_high_param": "AXI_LITE_SPI_HIGHADDR"
-              },
               "SEG_axi_gpio_0_Reg": {
                 "address_block": "/axi_gpio_0/S_AXI/Reg",
                 "offset": "0x40000000",
