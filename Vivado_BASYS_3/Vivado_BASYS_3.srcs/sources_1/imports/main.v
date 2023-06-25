@@ -111,91 +111,40 @@ module main(
     assign CPU_PSM_DPS_14b  = CPU_IO_out0_32b[27:14];
     assign CPU_Led          = CPU_IO_out0_32b[28];
     assign CPU_IO_in0_32b   = {28'd0, GPIO_button_5b[3:0]};
+
     
 `ifndef SIMULATION 
-    CPU1 CPU1_1(
+    CPU1_wrapper CPU1_12(
         //CLK
-        .clk_in1(clk_out_100MHz),
-        
+        .clk_in1        (clk_out_100MHz),
         //GPIO
         .IO_in0_tri_i   (CPU_IO_in0_32b),
-        .IO_out0_tri_o  (CPU_IO_out0_32b),
-        
+        .IO_out0_tri_o  (CPU_IO_out0_32b),   
         //UART
-        .UART0_rxd(CPU_UART_RX),
-        .UART0_txd(CPU_UART_TX),
-
+        .UART0_rxd      (CPU_UART_RX),
+        .UART0_txd      (CPU_UART_TX),
         //SD card
-//        .Pmod_SD_pin10_i(Pmod_SD_pin10_i),
-//        .Pmod_SD_pin10_o(Pmod_SD_pin10_o),
-//        .Pmod_SD_pin10_t(Pmod_SD_pin10_t),
-//        .Pmod_SD_pin1_i(Pmod_SD_pin1_i),
-//        .Pmod_SD_pin1_o(Pmod_SD_pin1_o),
-//        .Pmod_SD_pin1_t(Pmod_SD_pin1_t),
-//        .Pmod_SD_pin2_i(Pmod_SD_pin2_i),
-//        .Pmod_SD_pin2_o(Pmod_SD_pin2_o),
-//        .Pmod_SD_pin2_t(Pmod_SD_pin2_t),
-//        .Pmod_SD_pin3_i(Pmod_SD_pin3_i),
-//        .Pmod_SD_pin3_o(Pmod_SD_pin3_o),
-//        .Pmod_SD_pin3_t(Pmod_SD_pin3_t),
-//        .Pmod_SD_pin4_i(Pmod_SD_pin4_i),
-//        .Pmod_SD_pin4_o(Pmod_SD_pin4_o),
-//        .Pmod_SD_pin4_t(Pmod_SD_pin4_t),
-//        .Pmod_SD_pin7_i(Pmod_SD_pin7_i),
-//        .Pmod_SD_pin7_o(Pmod_SD_pin7_o),
-//        .Pmod_SD_pin7_t(Pmod_SD_pin7_t),
-//        .Pmod_SD_pin8_i(Pmod_SD_pin8_i),
-//        .Pmod_SD_pin8_o(Pmod_SD_pin8_o),
-//        .Pmod_SD_pin8_t(Pmod_SD_pin8_t),
-//        .Pmod_SD_pin9_i(Pmod_SD_pin9_i),
-//        .Pmod_SD_pin9_o(Pmod_SD_pin9_o),
-//        .Pmod_SD_pin9_t(Pmod_SD_pin9_t),
-
+        .Pmod_sd0_pin1_io    (JA[0]),
+        .Pmod_sd0_pin2_io    (JA[1]),
+        .Pmod_sd0_pin3_io    (JA[2]),
+        .Pmod_sd0_pin4_io    (JA[3]),
+        .Pmod_sd0_pin7_io    (JA[4]),
+        .Pmod_sd0_pin8_io    (JA[5]),
+        .Pmod_sd0_pin9_io    (JA[6]),
+        .Pmod_sd0_pin10_io   (JA[7]), 
+        //SPI
+        .SPI0_io0_io (JC[0]),
+        .SPI0_io1_io (JC[1]),
+        .SPI0_sck_io (JC[2]),
+        .SPI0_ss_io  (JC[3]),  
+        //I2C
+        .IIC0_scl_io (JC[4]),
+        .IIC0_sda_io (JC[5]), 
         //RESET
-        .reset(1'b0)
+        .reset  (GPIO_switch_16b[15])
     );
 `endif 
-    //Pmod Header JC
-//    IOBUF Pmod_SD_pin10_iobuf
-//    (.I(Pmod_SD_pin10_o),
-//        .IO(JC[0]),
-//        .O(Pmod_SD_pin10_i),
-//        .T(Pmod_SD_pin10_t));
-//    IOBUF Pmod_SD_pin1_iobuf
-//    (.I(Pmod_SD_pin1_o),
-//        .IO(JC[1]),
-//        .O(Pmod_SD_pin1_i),
-//        .T(Pmod_SD_pin1_t));
-//    IOBUF Pmod_SD_pin2_iobuf
-//    (.I(Pmod_SD_pin2_o),
-//        .IO(JC[2]),
-//        .O(Pmod_SD_pin2_i),
-//        .T(Pmod_SD_pin2_t));
-//    IOBUF Pmod_SD_pin3_iobuf
-//    (.I(Pmod_SD_pin3_o),
-//        .IO(JC[3]),
-//        .O(Pmod_SD_pin3_i),
-//        .T(Pmod_SD_pin3_t));
-//    IOBUF Pmod_SD_pin4_iobuf
-//    (.I(Pmod_SD_pin4_o),
-//        .IO(JC[4]),
-//        .O(Pmod_SD_pin4_i),
-//        .T(Pmod_SD_pin4_t));
-//    IOBUF Pmod_SD_pin7_iobuf
-//    (.I(Pmod_SD_pin7_o),
-//        .IO(JC[5]),
-//        .O(Pmod_SD_pin7_i),
-//        .T(Pmod_SD_pin7_t));
-//    IOBUF Pmod_SD_pin8_iobuf
-//    (.I(Pmod_SD_pin8_o),
-//        .IO(JC[6]),
-//        .O(Pmod_SD_pin8_i),
-//        .T(Pmod_SD_pin8_t));
-//    IOBUF Pmod_SD_pin9_iobuf
-//    (.I(Pmod_SD_pin9_o),
-//        .IO(JC[7]),
-//        .O(Pmod_SD_pin9_i),
-//        .T(Pmod_SD_pin9_t));
+ 
 
     //wire Pmod_RS485_TXD, Pmod_RS485_RXD, Pmod_RS485_DE, Pmod_RS485_nRE;
     
@@ -210,8 +159,6 @@ module main(
     
     //assign Pmod_RS485_DE  = SW[0];
     //assign Pmod_RS485_nRE  = SW[1];
-    
-
     
   
 //===================================================================                       
@@ -230,35 +177,35 @@ module main(
 //===================================================================                       
 //                         PSM Controller
 //===================================================================
-    wire [7:0] PSM_8b;
-    wire [13:0]PSM_SPS_14b, PSM_DPS_14b;
+//    wire [7:0] PSM_8b;
+//    wire [13:0]PSM_SPS_14b, PSM_DPS_14b;
 
 
-    xpm_cdc_array_single #(
-       .DEST_SYNC_FF(3),   // DECIMAL; range: 2-10
-       .INIT_SYNC_FF(0),   // DECIMAL; 0=disable simulation init values, 1=enable simulation init values
-       .SIM_ASSERT_CHK(1), // DECIMAL; 0=disable simulation messages, 1=enable simulation messages
-       .SRC_INPUT_REG(1),  // DECIMAL; 0=do not register input, 1=register input
-       .WIDTH(14)          // DECIMAL; range: 1-1024
-    )
-    xpm_cdc_array_single_sync [1:0] (
-       .dest_out({PSM_DPS_14b, PSM_SPS_14b}), // WIDTH-bit output: src_in synchronized to the destination clock domain.
-       .dest_clk(clk_out_250MHz), // 1-bit input: Clock signal for the destination clock domain.
-       .src_clk(clk_out_100MHz),   // 1-bit input: optional; required when SRC_INPUT_REG = 1
-       .src_in({CPU_PSM_DPS_14b, CPU_PSM_SPS_14b}) // WIDTH-bit input: Input single-bit array to be synchronized to destination clock domain.
-    );
+//    xpm_cdc_array_single #(
+//       .DEST_SYNC_FF(3),   // DECIMAL; range: 2-10
+//       .INIT_SYNC_FF(0),   // DECIMAL; 0=disable simulation init values, 1=enable simulation init values
+//       .SIM_ASSERT_CHK(1), // DECIMAL; 0=disable simulation messages, 1=enable simulation messages
+//       .SRC_INPUT_REG(1),  // DECIMAL; 0=do not register input, 1=register input
+//       .WIDTH(14)          // DECIMAL; range: 1-1024
+//    )
+//    xpm_cdc_array_single_sync [1:0] (
+//       .dest_out({PSM_DPS_14b, PSM_SPS_14b}), // WIDTH-bit output: src_in synchronized to the destination clock domain.
+//       .dest_clk(clk_out_250MHz), // 1-bit input: Clock signal for the destination clock domain.
+//       .src_clk(clk_out_100MHz),   // 1-bit input: optional; required when SRC_INPUT_REG = 1
+//       .src_in({CPU_PSM_DPS_14b, CPU_PSM_SPS_14b}) // WIDTH-bit input: Input single-bit array to be synchronized to destination clock domain.
+//    );
 
-    PSM_modulator #(.N(`PSM_FREQUENCY_WIDTH)) psm1(
-        .CLK            (clk_out_125MHz),
-        .RST            (rst),
-        .SPS_value_i    (PSM_SPS_14b[`PSM_FREQUENCY_WIDTH-1:0]),
-        .DPS_value_i    (PSM_DPS_14b[`PSM_FREQUENCY_WIDTH-1:0]),
-        .CPU_PSM_soft_i (GPIO_button_5b[`Btn_Down]),
-        .local_counter_i(local_counter_16b),
-        .oPSM           (PSM_8b)
-    );
+//    PSM_modulator #(.N(`PSM_FREQUENCY_WIDTH)) psm1(
+//        .CLK            (clk_out_125MHz),
+//        .RST            (rst),
+//        .SPS_value_i    (PSM_SPS_14b[`PSM_FREQUENCY_WIDTH-1:0]),
+//        .DPS_value_i    (PSM_DPS_14b[`PSM_FREQUENCY_WIDTH-1:0]),
+//        .CPU_PSM_soft_i (GPIO_button_5b[`Btn_Down]),
+//        .local_counter_i(local_counter_16b),
+//        .oPSM           (PSM_8b)
+//    );
     
-    assign JB = PSM_8b;
+//    assign JB = PSM_8b;
 
 
 //===================================================================                       

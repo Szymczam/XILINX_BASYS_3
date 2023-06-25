@@ -41,7 +41,7 @@
                             							
                             <tool id="xilinx.gnu.mb.c.toolchain.assembler.debug.1151778583" name="MicroBlaze gcc assembler" superClass="xilinx.gnu.mb.c.toolchain.assembler.debug">
                                 								
-                                <option id="xilinx.gnu.mb.assembler.usele.124931029" name="Produce little endian code (-mlittle-endian)" superClass="xilinx.gnu.mb.assembler.usele" value="true" valueType="boolean"/>
+                                <option id="xilinx.gnu.mb.assembler.usele.124931029" name="Produce little endian code (-mlittle-endian)" superClass="xilinx.gnu.mb.assembler.usele" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
                                 <inputType id="xilinx.gnu.assembler.input.1772299080" superClass="xilinx.gnu.assembler.input"/>
                                 							
@@ -81,39 +81,33 @@
                             							
                             <tool id="xilinx.gnu.mb.cxx.toolchain.compiler.debug.2055143668" name="MicroBlaze g++ compiler" superClass="xilinx.gnu.mb.cxx.toolchain.compiler.debug">
                                 								
-                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.153560826" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.153560826" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
                                 								
                                 <option id="xilinx.gnu.compiler.option.debugging.level.1404733072" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.mb.compiler.inferred.mbversion.835257587" name="MicroBlaze Version" superClass="xilinx.gnu.mb.compiler.inferred.mbversion" value="11.0" valueType="string"/>
+                                <option id="xilinx.gnu.mb.compiler.inferred.mbversion.835257587" name="MicroBlaze Version" superClass="xilinx.gnu.mb.compiler.inferred.mbversion" useByScannerDiscovery="false" value="11.0" valueType="string"/>
                                 								
-                                <option id="xilinx.gnu.mb.compiler.inferred.norelax.2063655380" name="No relaxation (-Wl,--no-relax)" superClass="xilinx.gnu.mb.compiler.inferred.norelax" value="true" valueType="boolean"/>
+                                <option id="xilinx.gnu.mb.compiler.inferred.norelax.2063655380" name="No relaxation (-Wl,--no-relax)" superClass="xilinx.gnu.mb.compiler.inferred.norelax" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="xilinx.gnu.mb.compiler.inferred.garbage.1590008448" name="Enable garbage collector (-ffunction-sections -fdata-sections)" superClass="xilinx.gnu.mb.compiler.inferred.garbage" value="true" valueType="boolean"/>
+                                <option id="xilinx.gnu.mb.compiler.inferred.garbage.1590008448" name="Enable garbage collector (-ffunction-sections -fdata-sections)" superClass="xilinx.gnu.mb.compiler.inferred.garbage" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="xilinx.gnu.mb.compiler.inferred.usereorderinstr.1673923811" name="Do not generate swap instruction (-mno-xl-reorder)" superClass="xilinx.gnu.mb.compiler.inferred.usereorderinstr" value="true" valueType="boolean"/>
+                                <option id="xilinx.gnu.mb.compiler.inferred.usereorderinstr.1673923811" name="Do not generate swap instruction (-mno-xl-reorder)" superClass="xilinx.gnu.mb.compiler.inferred.usereorderinstr" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="xilinx.gnu.mb.compiler.inferred.usele.828416474" name="Produce little endian code (-mlittle-endian)" superClass="xilinx.gnu.mb.compiler.inferred.usele" value="true" valueType="boolean"/>
+                                <option id="xilinx.gnu.mb.compiler.inferred.usele.828416474" name="Produce little endian code (-mlittle-endian)" superClass="xilinx.gnu.mb.compiler.inferred.usele" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="xilinx.gnu.mb.compiler.inferred.usebarrel.1247354300" name="Use Barrel Shifter (-mxl-barrel-shift)" superClass="xilinx.gnu.mb.compiler.inferred.usebarrel" value="true" valueType="boolean"/>
+                                <option id="xilinx.gnu.mb.compiler.inferred.usebarrel.1247354300" name="Use Barrel Shifter (-mxl-barrel-shift)" superClass="xilinx.gnu.mb.compiler.inferred.usebarrel" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="xilinx.gnu.mb.compiler.inferred.usepcmp.119193112" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.compiler.inferred.usepcmp" value="true" valueType="boolean"/>
+                                <option id="xilinx.gnu.mb.compiler.inferred.usepcmp.119193112" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.compiler.inferred.usepcmp" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="xilinx.gnu.mb.compiler.inferred.mul.489926063" name="Hardware Multiplier" superClass="xilinx.gnu.mb.compiler.inferred.mul" value="xilinx.gnu.mb.compiler.inferred.mul.32bit" valueType="enumerated"/>
+                                <option id="xilinx.gnu.mb.compiler.inferred.mul.489926063" name="Hardware Multiplier" superClass="xilinx.gnu.mb.compiler.inferred.mul" useByScannerDiscovery="false" value="xilinx.gnu.mb.compiler.inferred.mul.32bit" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.191237936" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.191237936" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="${resolvePlatformFile:project=CPU1,fileType=bspInclude}"/>
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.compiler.dircategory.includes.1286642601" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath">
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/utility}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;F:\GitKraken\XILINX_BASYS_3\Vitis\CPU1\utility&quot;"/>
-                                    								
-                                </option>
+                                <option id="xilinx.gnu.compiler.dircategory.includes.1286642601" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath"/>
                                 								
                                 <inputType id="xilinx.gnu.mb.cxx.compiler.input.1339658600" name="C++ source files" superClass="xilinx.gnu.mb.cxx.compiler.input"/>
                                 							
@@ -165,33 +159,33 @@
                             							
                             <tool id="xilinx.gnu.mb.cxx.toolchain.linker.debug.1262962385" name="MicroBlaze g++ linker" superClass="xilinx.gnu.mb.cxx.toolchain.linker.debug">
                                 								
-                                <option id="xilinx.gnu.mb.linker.inferred.mbversion.1805894494" name="MicroBlaze Version" superClass="xilinx.gnu.mb.linker.inferred.mbversion" value="11.0" valueType="string"/>
+                                <option id="xilinx.gnu.mb.linker.inferred.mbversion.1805894494" name="MicroBlaze Version" superClass="xilinx.gnu.mb.linker.inferred.mbversion" useByScannerDiscovery="false" value="11.0" valueType="string"/>
                                 								
-                                <option id="xilinx.gnu.mb.linker.inferred.norelax.1773287246" name="No relaxation (-Wl,--no-relax)" superClass="xilinx.gnu.mb.linker.inferred.norelax" value="true" valueType="boolean"/>
+                                <option id="xilinx.gnu.mb.linker.inferred.norelax.1773287246" name="No relaxation (-Wl,--no-relax)" superClass="xilinx.gnu.mb.linker.inferred.norelax" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="xilinx.gnu.mb.linker.inferred.garbage.1028034431" name="Enable garbage collector (-Wl,--gc-sections)" superClass="xilinx.gnu.mb.linker.inferred.garbage" value="true" valueType="boolean"/>
+                                <option id="xilinx.gnu.mb.linker.inferred.garbage.1028034431" name="Enable garbage collector (-Wl,--gc-sections)" superClass="xilinx.gnu.mb.linker.inferred.garbage" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="xilinx.gnu.mb.linker.inferred.usele.1631766910" name="Produce little endian artifacts (-mlittle-endian)" superClass="xilinx.gnu.mb.linker.inferred.usele" value="true" valueType="boolean"/>
+                                <option id="xilinx.gnu.mb.linker.inferred.usele.1631766910" name="Produce little endian artifacts (-mlittle-endian)" superClass="xilinx.gnu.mb.linker.inferred.usele" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="xilinx.gnu.mb.linker.inferred.usebarrel.993275648" name="Use Barrel Shifter (-mxl-barrel-shift)" superClass="xilinx.gnu.mb.linker.inferred.usebarrel" value="true" valueType="boolean"/>
+                                <option id="xilinx.gnu.mb.linker.inferred.usebarrel.993275648" name="Use Barrel Shifter (-mxl-barrel-shift)" superClass="xilinx.gnu.mb.linker.inferred.usebarrel" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="xilinx.gnu.mb.linker.inferred.usepcmp.927803583" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.linker.inferred.usepcmp" value="true" valueType="boolean"/>
+                                <option id="xilinx.gnu.mb.linker.inferred.usepcmp.927803583" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.linker.inferred.usepcmp" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="xilinx.gnu.mb.linker.inferred.mul.208791746" name="Hardware Multiplier" superClass="xilinx.gnu.mb.linker.inferred.mul" value="xilinx.gnu.mb.linker.inferred.mul.32bit" valueType="enumerated"/>
+                                <option id="xilinx.gnu.mb.linker.inferred.mul.208791746" name="Hardware Multiplier" superClass="xilinx.gnu.mb.linker.inferred.mul" useByScannerDiscovery="false" value="xilinx.gnu.mb.linker.inferred.mul.32bit" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.linker.inferred.swplatform.lpath.1965858684" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
+                                <option id="xilinx.gnu.linker.inferred.swplatform.lpath.1965858684" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" useByScannerDiscovery="false" valueType="libPaths">
                                     									
                                     <listOptionValue builtIn="false" value="${resolvePlatformFile:project=CPU1,fileType=bspLib}"/>
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.linker.inferred.swplatform.flags.300406453" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
+                                <option id="xilinx.gnu.linker.inferred.swplatform.flags.300406453" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" useByScannerDiscovery="false" valueType="libs">
                                     									
                                     <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group"/>
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.c.linker.option.lscript.1836530006" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
+                                <option id="xilinx.gnu.c.linker.option.lscript.1836530006" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" useByScannerDiscovery="false" value="../src/lscript.ld" valueType="string"/>
                                 								
                                 <option id="xilinx.gnu.c.link.option.libs.1426192467" name="Libraries (-l)" superClass="xilinx.gnu.c.link.option.libs" useByScannerDiscovery="false"/>
                                 								

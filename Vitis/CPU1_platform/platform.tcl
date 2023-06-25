@@ -19,3 +19,17 @@ platform generate
 platform active {CPU1_platform}
 platform config -updatehw {F:/GitKraken/XILINX_BASYS_3/Vivado_BASYS_3/main.xsa}
 platform generate -domains 
+platform active {CPU1_platform}
+platform config -updatehw {F:/GitKraken/XILINX_BASYS_3/Vivado_BASYS_3/main.xsa}
+platform generate -domains 
+platform clean
+platform generate
+platform config -updatehw {F:/GitKraken/XILINX_BASYS_3/Vivado_BASYS_3/main.xsa}
+platform generate -domains 
+platform generate -domains standalone_domain 
+platform active {CPU1_platform}
+bsp reload
+bsp reload
+platform generate -domains 
+platform config -updatehw {F:/GitKraken/XILINX_BASYS_3/Vivado_BASYS_3/main.xsa}
+platform config -updatehw {F:/GitKraken/XILINX_BASYS_3/Vivado_BASYS_3/main.xsa}
