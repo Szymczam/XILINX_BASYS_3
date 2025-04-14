@@ -1,0 +1,21 @@
+PmodSD_0:
+- PmodSD
+- None
+axi_gpio_0:
+- axi_gpio
+- gpio
+axi_iic_0:
+- axi_iic
+- iic
+axi_quad_spi_0:
+- axi_quad_spi
+- spi
+axi_timer_0:
+- axi_timer
+- tmrctr
+axi_uartlite_0:
+- axi_uartlite
+- uartlite
+microblaze_riscv_0_axi_intc:
+- axi_intc
+- intc

@@ -1,0 +1,25 @@
+# ninja log v5
+25	926	0	CMakeFiles/tmrctr_example	3fc63e102f08a57a
+25	926	0	xtmrctr_exlist.yaml	3fc63e102f08a57a
+25	926	0	F:/GitKraken/XILINX_BASYS_3/Vitis/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/tmrctr_example	3fc63e102f08a57a
+25	926	0	F:/GitKraken/XILINX_BASYS_3/Vitis/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/exmetadata/xtmrctr_exlist.yaml	3fc63e102f08a57a
+3	979	0	CMakeFiles/gpio_example	240f9b433fde7dd9
+3	979	0	xgpio_exlist.yaml	240f9b433fde7dd9
+3	979	0	F:/GitKraken/XILINX_BASYS_3/Vitis/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/gpio_example	240f9b433fde7dd9
+3	979	0	F:/GitKraken/XILINX_BASYS_3/Vitis/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/exmetadata/xgpio_exlist.yaml	240f9b433fde7dd9
+18	1031	0	CMakeFiles/spi_example	c1c41eb994fede7
+18	1031	0	xspi_exlist.yaml	c1c41eb994fede7
+18	1031	0	F:/GitKraken/XILINX_BASYS_3/Vitis/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/spi_example	c1c41eb994fede7
+18	1031	0	F:/GitKraken/XILINX_BASYS_3/Vitis/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/exmetadata/xspi_exlist.yaml	c1c41eb994fede7
+11	1099	0	CMakeFiles/iic_example	c47bd36307e599f
+11	1099	0	xiic_exlist.yaml	c47bd36307e599f
+11	1099	0	F:/GitKraken/XILINX_BASYS_3/Vitis/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/iic_example	c47bd36307e599f
+11	1099	0	F:/GitKraken/XILINX_BASYS_3/Vitis/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/exmetadata/xiic_exlist.yaml	c47bd36307e599f
+40	1170	0	CMakeFiles/intc_example	759b4a07048482da
+40	1170	0	xintc_exlist.yaml	759b4a07048482da
+40	1170	0	F:/GitKraken/XILINX_BASYS_3/Vitis/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/intc_example	759b4a07048482da
+40	1170	0	F:/GitKraken/XILINX_BASYS_3/Vitis/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/exmetadata/xintc_exlist.yaml	759b4a07048482da
+33	1203	0	CMakeFiles/uartlite_example	180b9097b3ed8dd6
+33	1203	0	xuartlite_exlist.yaml	180b9097b3ed8dd6
+33	1203	0	F:/GitKraken/XILINX_BASYS_3/Vitis/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/uartlite_example	180b9097b3ed8dd6
+33	1203	0	F:/GitKraken/XILINX_BASYS_3/Vitis/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/exmetadata/xuartlite_exlist.yaml	180b9097b3ed8dd6

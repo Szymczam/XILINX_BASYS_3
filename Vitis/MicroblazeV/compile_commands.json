@@ -1,0 +1,12 @@
+[
+{
+  "directory": "F:/GitKraken/XILINX_BASYS_3/Vitis/MicroblazeV/build",
+  "command": "C:\\Xilinx\\Vitis\\2024.2\\gnu\\riscv\\nt\\riscv64-unknown-elf\\bin\\riscv64-unknown-elf-gcc.exe -isystem F:/GitKraken/XILINX_BASYS_3/Vitis/platform/export/platform/sw/standalone_microblaze_riscv_0/include -isystem C:/Xilinx/Vitis/2024.2/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include -isystem C:/Xilinx/Vitis/2024.2/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include-fixed -isystem C:/Xilinx/Vitis/2024.2/gnu/riscv/nt/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include  -O2 -march=rv32imfc_zicsr_zifencei -mabi=ilp32f -DSDT  -MMD -MP  -specs=F:/GitKraken/XILINX_BASYS_3/Vitis/platform/export/platform/sw/standalone_microblaze_riscv_0/Xilinx.spec -IF:/GitKraken/XILINX_BASYS_3/Vitis/platform/export/platform/sw/standalone_microblaze_riscv_0/include -Wall -Wextra      -O0  -g3     -U__clang__ \"-D__FILENAME__='__FILE__'\" -o CMakeFiles\\MicroblazeV.elf.dir\\helloworld.c.obj -c F:\\GitKraken\\XILINX_BASYS_3\\Vitis\\MicroblazeV\\src\\helloworld.c",
+  "file": "F:\\GitKraken\\XILINX_BASYS_3\\Vitis\\MicroblazeV\\src\\helloworld.c"
+},
+{
+  "directory": "F:/GitKraken/XILINX_BASYS_3/Vitis/MicroblazeV/build",
+  "command": "C:\\Xilinx\\Vitis\\2024.2\\gnu\\riscv\\nt\\riscv64-unknown-elf\\bin\\riscv64-unknown-elf-gcc.exe -isystem F:/GitKraken/XILINX_BASYS_3/Vitis/platform/export/platform/sw/standalone_microblaze_riscv_0/include -isystem C:/Xilinx/Vitis/2024.2/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include -isystem C:/Xilinx/Vitis/2024.2/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include-fixed -isystem C:/Xilinx/Vitis/2024.2/gnu/riscv/nt/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include  -O2 -march=rv32imfc_zicsr_zifencei -mabi=ilp32f -DSDT  -MMD -MP  -specs=F:/GitKraken/XILINX_BASYS_3/Vitis/platform/export/platform/sw/standalone_microblaze_riscv_0/Xilinx.spec -IF:/GitKraken/XILINX_BASYS_3/Vitis/platform/export/platform/sw/standalone_microblaze_riscv_0/include -Wall -Wextra      -O0  -g3     -U__clang__ \"-D__FILENAME__='__FILE__'\" -o CMakeFiles\\MicroblazeV.elf.dir\\platform.c.obj -c F:\\GitKraken\\XILINX_BASYS_3\\Vitis\\MicroblazeV\\src\\platform.c",
+  "file": "F:\\GitKraken\\XILINX_BASYS_3\\Vitis\\MicroblazeV\\src\\platform.c"
+}
+]
